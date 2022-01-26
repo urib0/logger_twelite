@@ -1,0 +1,12 @@
+{
+    "basedir": "/home/pi/work/log",
+    "logdir_name": "log_twe",
+    "serial_port": "/dev/serial/by-id/hoge",
+    "serial_rate": 9600,
+    "devices": [
+        {
+            "sensor_id": "8xxxxxx",
+            "sensor_name": "BME280"
+        }
+    ]
+}
