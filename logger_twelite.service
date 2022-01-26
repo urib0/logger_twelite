@@ -1,0 +1,13 @@
+[Unit]
+Description=ssh reverse port forwarding service
+After=network.target auditd.service
+
+[Service]
+User=pi
+Group=pi
+WorkingDirectory=/home/pi
+ExecStart=python3 /home/pi/work/logger_twelite/main.py
+Restart=always
+
+[Install]
+WantedBy=multi-user.target
